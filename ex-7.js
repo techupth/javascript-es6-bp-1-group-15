@@ -3,7 +3,18 @@ const employee1 = {
   age: 20,
 };
 
-const result1 = employee1.scores.english;
+let result1 = employee1.scores?.english;
+
+function checkUndefined1(result1) {
+  if (undefined ?? result1) {
+    return "defined";
+  } else {
+    return "undefined";
+  };
+};
+
+result1 = checkUndefined1(result1);
+console.log(result1);
 
 const employee2 = {
   name: "A",
@@ -13,4 +24,15 @@ const employee2 = {
   },
 };
 
-const result2 = employee2.scores.english;
+let result2 = employee2.scores?.english;
+
+function checkUndefined2(result2) {
+  if (undefined ?? result2) {
+    return "English score is defined";
+  } else {
+    return "English score is not defined";
+  };
+};
+
+result2 = checkUndefined2(result2);
+console.log(result2);
