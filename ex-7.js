@@ -13,6 +13,6 @@ const employee2 = {
   },
 };
 
-const result2 = employee2.scores?.english ?? "English score is not defind";
+const result2 = employee2.scores?.english ?? "English score is not defined";
 console.log(result1);
 console.log(result2);
